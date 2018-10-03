@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: install the latest version of Maven
+      package:
+        name: maven
+        state: latest
+
+
