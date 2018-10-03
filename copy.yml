@@ -1,0 +1,12 @@
+#to copy a file from local to remote host
+---
+- hosts: localhost
+  tasks:
+    - name: copy file/dir from one location to another
+      copy:
+        src: /etc/ansible/tirupathi/file1
+        dest: /etc/ansible
+        owner: ubuntu
+        group: ubuntu
+        mode: 0777
+
