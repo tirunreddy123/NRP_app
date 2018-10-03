@@ -1,0 +1,10 @@
+#to create a folder/file
+#src and dest path should be same server
+---
+- hosts: localhost
+  tasks:
+    - name: create a file or directory
+      file:
+        path: /etc/ansible/tirupathi/file1.txt
+        state: touch
+

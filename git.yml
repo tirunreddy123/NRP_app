@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: install the latest version of Git
+      package:
+        name: git
+        state: latest
+
+
